@@ -1,0 +1,58 @@
+/* Kalender-Stil */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 10px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+td.calendar-day {
+    border: 1px solid #ccc;
+    padding: 10px;
+    vertical-align: top;
+    text-align: center;
+    height: 100px;  /* Feste Höhe für alle Zellen */
+    width: 100px;   /* Feste Breite für alle Zellen */
+    box-sizing: border-box;
+    overflow-y: auto; /* Ermöglicht das Scrollen bei vielen Terminen */
+}
+
+td.calendar-day:hover {
+    background-color: #f0f0f0;
+}
+
+small {
+    color: #555;
+    font-size: 12px;
+}
+
+small:hover {
+    text-decoration: underline;
+}
+
+span.outer-circle {
+    height: 750px;
+    width: 750px;
+    position: fixed;
+    left: 500px;
+    top: 120px;
+    background-color: #3f3535;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+span.inner-circle {
+    height: 650px;
+    width: 650px;
+    position: fixed;
+    left: 550px;
+    top: 170px;
+    z-index: 2;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+}
